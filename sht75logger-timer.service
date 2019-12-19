@@ -1,0 +1,9 @@
+[Unit]
+Description=sht75logger python script
+
+[Service]
+Type=simple
+User=pi
+Group=pi
+WorkingDirectory=/home/pi/sht75logger/
+ExecStart=/home/pi/sht75logger/ffpi_worker.py
