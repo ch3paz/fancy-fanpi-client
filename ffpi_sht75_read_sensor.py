@@ -41,10 +41,10 @@ def sht75_read_sensors():
         },
         "time": time.strftime("%Y-%m-%dT%H:%M:%S"),
         "fields": {
-            "RH": hval_sensor,
-            "T": tval_sensor,
-            "DP": dval_sensor,
-            "AH": aval_sensor,
+            "RH": float(hval_sensor),
+            "T": float(tval_sensor),
+            "DP": float(dval_sensor),
+            "AH": float(aval_sensor),
         }
     }]
 
